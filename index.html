@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1657543210-rZoZoxaB" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "ดูนี่ๆ",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "🏰 PARK GAMER 🏰",
+            "align": "center",
+            "weight": "bold",
+            "color": "#ffffff"
+          },
+          {
+            "type": "text",
+            "text": "พิเศษ!! สมาชิกใหม่รับโบนัสเพิ่ม 150%",
+            "align": "center",
+            "size": "xs",
+            "color": "#ff0000"
+          }
+        ],
+        "background": {
+          "type": "linearGradient",
+          "angle": "0deg",
+          "startColor": "#36210e",
+          "endColor": "#b75c01"
+        },
+        "cornerRadius": "xl"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://media.discordapp.net/attachments/1026882192590241833/1027161919515283466/02.2-01_1.jpg",
+            "size": "full"
+          }
+        ],
+        "paddingTop": "sm"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "llจกเคsดิตฟรี 50.-",
+            "align": "center",
+            "color": "#ffffff"
+          },
+          {
+            "type": "text",
+            "text": "ทำยอด 500 ถอนได้ 100",
+            "align": "center",
+            "color": "#ffffff"
+          },
+          {
+            "type": "text",
+            "text": "* เล่นได้ทุกเกมส์ *",
+            "align": "center",
+            "color": "#f9d924"
+          }
+        ],
+        "background": {
+          "type": "linearGradient",
+          "angle": "0deg",
+          "startColor": "#36210e",
+          "endColor": "#b75c01"
+        },
+        "borderWidth": "medium",
+        "cornerRadius": "xl",
+        "borderColor": "#996633",
+        "offsetTop": "md"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "👇 รับเคsดิตฟรี 👇",
+            "align": "center"
+          },
+          {
+            "type": "image",
+            "url": "https://cdn.discordapp.com/attachments/1026780771689697332/1027519772767821854/ezgif.com-gif-maker_7.png",
+            "animated": true,
+            "aspectRatio": "4:1",
+            "size": "sm"
+          }
+        ],
+        "background": {
+          "type": "linearGradient",
+          "angle": "0deg",
+          "startColor": "#ff8911",
+          "endColor": "#ffdd23"
+        },
+        "borderWidth": "medium",
+        "cornerRadius": "xl",
+        "borderColor": "#ffffff",
+        "offsetTop": "lg",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://liff.line.me/1645278921-kWRPP32q/?accountId=835qwvgv"
+        }
+      }
+    ],
+    "background": {
+      "type": "linearGradient",
+      "angle": "0deg",
+      "startColor": "#59bbd6",
+      "endColor": "#7bc9df"
+    },
+    "borderWidth": "semi-bold",
+    "cornerRadius": "xl",
+    "borderColor": "#ffffff",
+    "paddingAll": "md",
+    "paddingBottom": "xxl"
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
